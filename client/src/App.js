@@ -1,6 +1,6 @@
 import './App.css';
 import FormComponent from './components/formComponent';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import PrivateRoute from './components/privateRoutes';
 import ReferralUserList from './components/ReferralUserList';
 import Login from './Pages/login';
@@ -20,6 +20,7 @@ function App() {
           <Route path="/referrals" element={<PrivateRoute element={<ReferralUserList />} />} />
           <Route path="/update" element={<PrivateRoute element={<UpdateProfile />} />} />
           <Route path="/refer/:id" element={<PrivateRoute element={<ReferPage />} />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
 
