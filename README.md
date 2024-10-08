@@ -47,14 +47,14 @@ client/
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Rajatxportsoft/DESTEK
+   cd DESTEK
    ```
 
 2. **Install backend dependencies**:
    Navigate to the `backend` directory and run:
    ```bash
-   cd backend
+  
    npm install
    ```
 
@@ -90,17 +90,6 @@ client/
 3. **Access the application**:
    Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-## API Endpoints
-
-The application has several API endpoints for user management:
-
-- **POST /api/users/register**: Register a new user.
-- **POST /api/users/login**: Login an existing user.
-- **GET /api/users/referrals**: Get the list of referrals for the authenticated user.
-- **PUT /api/users/update**: Update user profile information.
-- **GET /api/users/:id**: Get user details by ID.
-
-Refer to the backend code in `backend/routes/userRoutes.js` for a complete list of available endpoints.
 
 ## Usage
 
